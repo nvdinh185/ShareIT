@@ -88,9 +88,9 @@
                                  	CatDao catDao_bar = new CatDao();
   	                           		ArrayList<Category> listCats3 = catDao_bar.getItems();
   	                           		if(listCats3!=null && listCats3.size()>0){
-  	                            	for(Category item: listCats3){
+  	                            	for(Category item2: listCats3){
                                  %>
-                           <li class="cat-item cat-item-2"><a href="https://colorlib.com/newspaper-x/category/editorial/"><%=item.getName() %></a> <span class="newspaper-x-cat-count">11</span></li>
+                           <li class="cat-item cat-item-2"><a href="https://colorlib.com/newspaper-x/category/editorial/"><%=item2.getName() %></a> <span class="newspaper-x-cat-count">11</span></li>
                         <%}} %>
                         </ul>
                      </div>

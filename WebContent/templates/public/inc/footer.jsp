@@ -44,9 +44,9 @@
                                  	CatDao catDao_footer = new CatDao();
   	                           		ArrayList<Category> listCats_footer = catDao_footer.getItems();
   	                           		if(listCats_footer!=null && listCats_footer.size()>0){
-  	                            	for(Category item: listCats_footer){
+  	                            	for(Category item1: listCats_footer){
                                  %>
-                              <li class="cat-item cat-item-2"><a href="https://colorlib.com/newspaper-x/category/editorial/"><%=item.getName() %></a> <span class="newspaper-x-cat-count">11</span></li>
+                              <li class="cat-item cat-item-2"><a href="https://colorlib.com/newspaper-x/category/editorial/"><%=item1.getName() %></a> <span class="newspaper-x-cat-count">11</span></li>
                            <%}} %>
                            </ul>
                         </div>

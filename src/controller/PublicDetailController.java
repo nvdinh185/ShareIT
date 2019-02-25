@@ -12,11 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import model.bean.News;
 import model.dao.NewsDao;
 
-public class PublicCatController extends HttpServlet {
+public class PublicDetailController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private NewsDao newsDao;
 
-	public PublicCatController() {
+	public PublicDetailController() {
 		super();
 		newsDao = new NewsDao();
 	}
@@ -25,13 +25,18 @@ public class PublicCatController extends HttpServlet {
 			throws ServletException, IOException {
 		int id = 0;
 		try {
-			id = Integer.parseInt(request.getParameter("cid"));
+			id = Integer.parseInt(request.getParameter("did"));
 		}catch(NumberFormatException e) {
 			
 		}
-		ArrayList<News> listNews = newsDao.getItemsByIdCat(1);
+		
+		News item = newsDao.getItem(6);
+		ArrayList<News> listNews = newsDao.getRelatedItems(item, 3);
+		
+		request.setAttribute("item", item);
 		request.setAttribute("listNews", listNews);
-		RequestDispatcher rd = request.getRequestDispatcher("/public/cat.jsp");
+		System.out.println(listNews.size());
+		RequestDispatcher rd = request.getRequestDispatcher("/public/detail.jsp");
 		rd.forward(request, response);
 	}
 

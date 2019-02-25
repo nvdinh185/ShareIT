@@ -20,4 +20,12 @@
     <servlet-name>PublicCatController</servlet-name>
     <url-pattern>/cat</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>PublicDetailController</servlet-name>
+    <servlet-class>controller.PublicDetailController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicDetailController</servlet-name>
+    <url-pattern>/detail</url-pattern>
+  </servlet-mapping>
 </web-app>
