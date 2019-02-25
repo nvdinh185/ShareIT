@@ -1,3 +1,6 @@
+<%@page import="model.bean.Category"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="model.dao.CatDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <aside id="secondary" class="widget-area col-lg-4 col-md-4 col-sm-4 newspaper-x-sidebar" role="complementary">
@@ -81,10 +84,14 @@
                      <div id="categories-5" class="widget widget_categories">
                         <h3>Categories</h3>
                         <ul>
-                           <li class="cat-item cat-item-2"><a href="https://colorlib.com/newspaper-x/category/editorial/">Editorial</a> <span class="newspaper-x-cat-count">11</span></li>
-                           <li class="cat-item cat-item-4"><a href="https://colorlib.com/newspaper-x/category/events/">Events</a> <span class="newspaper-x-cat-count">9</span></li>
-                           <li class="cat-item cat-item-5 current-cat"><a href="https://colorlib.com/newspaper-x/category/news/">News</a> <span class="newspaper-x-cat-count">3</span></li>
-                           <li class="cat-item cat-item-3"><a href="https://colorlib.com/newspaper-x/category/the-world/">The World</a> <span class="newspaper-x-cat-count">7</span></li>
+                        <%
+                                 	CatDao catDao_bar = new CatDao();
+  	                           		ArrayList<Category> listCats3 = catDao_bar.getItems();
+  	                           		if(listCats3!=null && listCats3.size()>0){
+  	                            	for(Category item: listCats3){
+                                 %>
+                           <li class="cat-item cat-item-2"><a href="https://colorlib.com/newspaper-x/category/editorial/"><%=item.getName() %></a> <span class="newspaper-x-cat-count">11</span></li>
+                        <%}} %>
                         </ul>
                      </div>
                   </div>

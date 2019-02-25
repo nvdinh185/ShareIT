@@ -6,6 +6,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
+<link href="<%=DefineUtil.URL_PUBLIC %>/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="<%=DefineUtil.URL_PUBLIC %>/css/style2.css" rel="stylesheet" type="text/css" media="all">
 <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/jquery.flexisel.js"></script>
 </head>

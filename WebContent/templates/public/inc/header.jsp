@@ -1,3 +1,6 @@
+<%@page import="model.bean.Category"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="model.dao.CatDao"%>
 <%@page import="util.DefineUtil"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -45,6 +48,10 @@
       <link rel="alternate" type="text/xml+oembed" href="https://colorlib.com/newspaper-x/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcolorlib.com%2Fnewspaper-x%2F&amp;format=xml">
       <meta name="onesignal" content="wordpress-plugin">
       <link rel="manifest" href="https://colorlib.com/newspaper-x/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id=">
+   <link href="<%=DefineUtil.URL_PUBLIC %>/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="<%=DefineUtil.URL_PUBLIC %>/css/style2.css" rel="stylesheet" type="text/css" media="all">
+	<script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/jquery.flexisel.js"></script>
    </head>
    <body class="home page-template-default page page-id-6 wp-custom-logo">
       <div id="page" class="site">
@@ -67,7 +74,7 @@
                         <span class="screen-reader-text">Search for:</span>
                         <input class="search-field" placeholder="Search..." value="" name="s" type="search">
                         </label>
-                        <button class="search-submit" value="Search  " type="submit"><span class="fa fa-search"></span></button>
+                        <button class="search-submit" value="Search" type="submit"><span class="fa fa-search"></span></button>
                      </form>
                   </div>
                </div>
@@ -94,17 +101,18 @@
                            <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
                               <li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-127"><a href="https://colorlib.com/newspaper-x" aria-current="page">Home</a></li>
                               <li id="menu-item-128" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-128" aria-haspopup="true">
-                                 <a href="https://colorlib.com/newspaper-x/category/news/">News</a>
+                                 <a href="#">News</a>
                                  <ul class="sub-menu">
-                                    <li id="menu-item-129" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-129" aria-haspopup="true">
-                                       <a href="https://colorlib.com/newspaper-x/category/the-world/">The World</a>
-                                       <ul class="sub-menu">
-                                          <li id="menu-item-136" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-136"><a href="https://colorlib.com/newspaper-x/#">World News</a></li>
-                                          <li id="menu-item-137" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137"><a href="https://colorlib.com/newspaper-x/#">World Events</a></li>
-                                       </ul>
+                                 <%
+                                 	CatDao catDao_header = new CatDao();
+  	                           		ArrayList<Category> listCats_header = catDao_header.getItems();
+  	                           		if(listCats_header!=null && listCats_header.size()>0){
+  	                            	for(Category item: listCats_header){
+                                 %>
+                                    <li id="menu-item-129" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-129" aria-haspopup="true">
+                                       <a href="<%=request.getContextPath() %>/cat?cid=<%=item.getId()%>"><%=item.getName() %></a>
                                     </li>
-                                    <li id="menu-item-130" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-130"><a href="https://colorlib.com/newspaper-x/category/events/">Events</a></li>
-                                    <li id="menu-item-131" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-131"><a href="https://colorlib.com/newspaper-x/category/editorial/">Editorial</a></li>
+                                    <%}} %>
                                  </ul>
                               </li>
                               <li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="https://colorlib.com/newspaper-x/blog/">Blog</a></li>

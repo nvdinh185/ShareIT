@@ -12,5 +12,12 @@
     <servlet-name>PublicIndexController</servlet-name>
     <url-pattern>/index</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <servlet-name>PublicCatController</servlet-name>
+    <servlet-class>controller.PublicCatController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicCatController</servlet-name>
+    <url-pattern>/cat</url-pattern>
+  </servlet-mapping>
 </web-app>
