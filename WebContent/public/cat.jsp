@@ -51,12 +51,6 @@
                <div id="primary" class="newspaper-x-content newspaper-x-archive-page col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <main id="main" class="site-main" role="main">
                      <div class="row">
-                        <div class="col-xs-12 newspaper-x-image-banner">
-                           <a href="https://colorlib.com/wp/forums/">
-                           <img width="729" height="90" src="../templates/public/images/banner.png" class="attachment-newspaper-x-wide-banner size-newspaper-x-wide-banner" alt=""> </a>
-                        </div>
-                     </div>
-                     <div class="row">
                         <div class="col-md-6">
                            <article id="post-70" class="post-70 post type-post status-publish format-standard has-post-thumbnail hentry category-news">
                               <header class="entry-header">

@@ -87,18 +87,5 @@
                            <li class="cat-item cat-item-3"><a href="https://colorlib.com/newspaper-x/category/the-world/">The World</a> <span class="newspaper-x-cat-count">7</span></li>
                         </ul>
                      </div>
-                     <div id="tag_cloud-2" class="widget widget_tag_cloud">
-                        <h3>Tags</h3>
-                        <div class="tagcloud"><a href="https://colorlib.com/newspaper-x/tag/business/" class="tag-cloud-link tag-link-13 tag-link-position-1" style="font-size: 8pt;" aria-label="business (2 items)">business</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/coast/" class="tag-cloud-link tag-link-16 tag-link-position-2" style="font-size: 8pt;" aria-label="coast (2 items)">coast</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/information/" class="tag-cloud-link tag-link-8 tag-link-position-3" style="font-size: 8pt;" aria-label="information (2 items)">information</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/life/" class="tag-cloud-link tag-link-14 tag-link-position-4" style="font-size: 8pt;" aria-label="life (2 items)">life</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/man/" class="tag-cloud-link tag-link-11 tag-link-position-5" style="font-size: 8pt;" aria-label="man (2 items)">man</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/money/" class="tag-cloud-link tag-link-10 tag-link-position-6" style="font-size: 8pt;" aria-label="money (2 items)">money</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/news/" class="tag-cloud-link tag-link-9 tag-link-position-7" style="font-size: 8pt;" aria-label="news (2 items)">news</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/politics/" class="tag-cloud-link tag-link-15 tag-link-position-8" style="font-size: 8pt;" aria-label="politics (2 items)">politics</a>
-                           <a href="https://colorlib.com/newspaper-x/tag/sport/" class="tag-cloud-link tag-link-12 tag-link-position-9" style="font-size: 8pt;" aria-label="sport (2 items)">sport</a>
-                        </div>
-                     </div>
                   </div>
                </aside>

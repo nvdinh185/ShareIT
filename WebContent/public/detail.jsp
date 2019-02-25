@@ -24,76 +24,24 @@
                               <div class="col-lg-11 col-sm-10 col-xs-12 newspaper-x-related-posts-title">
                                  <h3><span>Related posts </span></h3>
                               </div>
-                              <div class="newspaper-x-carousel-navigation hidden-xs text-right">
-                                 <ul class="newspaper-x-carousel-arrows clearfix">
-                                    <li><a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/#" class="newspaper-x-owl-prev fa fa-angle-left"></a></li>
-                                    <li><a href="https://colorlib.com/newspaper-x/2017/05/10/vivamus-id-lorem-blandit/#" class="newspaper-x-owl-next fa fa-angle-right"></a></li>
-                                 </ul>
-                              </div>
                            </div>
-                           <div class="owlCarousel owl-carousel owl-theme owl-loaded owl-drag" data-slider-id="98" id="owlCarousel-98" data-slider-items="3" data-slider-speed="400" data-slider-auto-play="1" data-slider-navigation="false">
                               <div class="owl-stage-outer">
-                                 <div class="owl-stage" style="transform: translate3d(-1750px, 0px, 0px); transition: all 0.25s ease 0s; width: 2500px;">
-                                    
-                                    
-                                    <div class="owl-item" style="width: 230px; margin-right: 20px;">
-                                       <div class="item">
-                                          <a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/"><img width="550" height="360" src="../templates/public/images/00_header_slider_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
-                                          <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/">Itum as binus sitam conestum…</a></div>
-                                          <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                       </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 230px; margin-right: 20px;">
+                                 <div class="owl-stage" style="width: 1000px;">
+                                    <div class="owl-item" style="width: 230px; margin-right: 20px">
                                        <div class="item">
                                           <a href="https://colorlib.com/newspaper-x/2017/05/10/nam-aliquet-lorem-vita/"><img width="550" height="360" src="../templates/public/images/00_header_under_article_02-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                           <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/nam-aliquet-lorem-vita/">Nam aliquet, lorem vita</a></div>
                                           <div class="newspaper-x-related-posts-date">May 10, 2017</div>
                                        </div>
                                     </div>
-                                    <div class="owl-item" style="width: 230px; margin-right: 20px;">
+                                    <div class="owl-item" style="width: 230px; margin-right: 20px">
                                        <div class="item">
                                           <a href="https://colorlib.com/newspaper-x/2017/05/10/nulla-nec-enimus-amis/"><img width="550" height="360" src="../templates/public/images/00_header_under_article_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
                                           <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/nulla-nec-enimus-amis/">Nulla nec enimus amis</a></div>
                                           <div class="newspaper-x-related-posts-date">May 10, 2017</div>
                                        </div>
                                     </div>
-                                    <div class="owl-item" style="width: 230px; margin-right: 20px;">
-                                       <div class="item">
-                                          <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum-2/"><img width="550" height="360" src="../templates/public/images/00_header_under_article_04-1-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
-                                          <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum-2/">Aliquet, lorem pantum.</a></div>
-                                          <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                       </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 230px; margin-right: 20px;">
-                                       <div class="item">
-                                          <a href="https://colorlib.com/newspaper-x/2017/05/10/odio-sapien-uta-accumsan-ut-dolor-vel/"><img width="550" height="360" src="../templates/public/images/02_events_article_06-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
-                                          <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/odio-sapien-uta-accumsan-ut-dolor-vel/">In odio sapien, at uta,…</a></div>
-                                          <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                       </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 230px; margin-right: 20px;">
-                                       <div class="item">
-                                          <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-tincidunt-posuere-quam-eu-atimu/"><img width="550" height="360" src="../templates/public/images/03_editorial_article_03-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
-                                          <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-tincidunt-posuere-quam-eu-atimu/">Maecenas tincidunt posuere quam, eu…</a></div>
-                                          <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                       </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 230px; margin-right: 20px;">
-                                       <div class="item">
-                                          <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-elit-ligula-placerat-elementum/"><img width="550" height="360" src="../templates/public/images/03_editorial_article_02-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
-                                          <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-elit-ligula-placerat-elementum/">Maecenas elit ligula, placerat elementum</a></div>
-                                          <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                       </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 230px; margin-right: 20px;">
-                                       <div class="item">
-                                          <a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/"><img width="550" height="360" src="../templates/public/images/03_editorial_article_01-550x360.jpg" class="attachment-newspaper-x-recent-post-big size-newspaper-x-recent-post-big wp-post-image" alt=""></a>
-                                          <div class="newspaper-x-related-post-title"><a href="https://colorlib.com/newspaper-x/2017/05/10/aliquet-lorem-pantum/">Maecenas tincidunt posuere quam, eu…</a></div>
-                                          <div class="newspaper-x-related-posts-date">May 10, 2017</div>
-                                       </div>
-                                    </div>
                                  </div>
-                              </div>
                            </div>
                         </div>
                      </article>

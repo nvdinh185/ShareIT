@@ -1,3 +1,4 @@
+<%@page import="util.DefineUtil"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <footer id="colophon" class="site-footer" role="contentinfo">
@@ -82,16 +83,6 @@
                   <div class="row">
                      <div class="col-md-12">
                         © 2019 Newspaper-X a theme by <a href="https://colorlib.com/">Colorlib</a>
-                        <nav id="footer-navigation" class="pull-right text-right hidden-xs">
-                           <div class="menu">
-                              <ul>
-                                 <li class="page_item page-item-132"><a href="https://colorlib.com/newspaper-x/blog/">Blog</a></li>
-                                 <li class="page_item page-item-138"><a href="https://colorlib.com/newspaper-x/contact/">Contact</a></li>
-                                 <li class="page_item page-item-6 current_page_item"><a href="https://colorlib.com/newspaper-x/" aria-current="page">Home</a></li>
-                                 <li class="page_item page-item-2"><a href="https://colorlib.com/newspaper-x/sample-page/">Sample Page</a></li>
-                              </ul>
-                           </div>
-                        </nav>
                      </div>
                   </div>
                </div>
@@ -103,19 +94,19 @@
          var wpcf7 = {"apiSettings":{"root":"https:\/\/colorlib.com\/newspaper-x\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
          /* ]]> */
       </script>
-      <script type="text/javascript" src="../templates/public/js/scripts.js"></script>
-      <script type="text/javascript" src="../templates/public/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="../templates/public/js/navigation.js"></script>
-      <script type="text/javascript" src="../templates/public/js/skip-link-focus-fix.js"></script>
-      <script type="text/javascript" src="../templates/public/js/jquery.adsenseloader.js"></script>
-      <script type="text/javascript" src="../templates/public/js/machothemes.min.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/scripts.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/navigation.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/skip-link-focus-fix.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/jquery.adsenseloader.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/machothemes.min.js"></script>
       <script type="text/javascript">
          /* <![CDATA[ */
          var WPUrls = {"siteurl":"https:\/\/colorlib.com\/newspaper-x","theme":"https:\/\/colorlib.com\/newspaper-x\/wp-content\/themes\/newspaper-x","ajaxurl":"https:\/\/colorlib.com\/newspaper-x\/wp-admin\/admin-ajax.php"};
          /* ]]> */
       </script>
-      <script type="text/javascript" src="../templates/public/js/functions.js"></script>
-      <script type="text/javascript" src="../templates/public/js/owl.carousel.min.js"></script>
-      <script type="text/javascript" src="../templates/public/js/wp-embed.min.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/functions.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="<%=DefineUtil.URL_PUBLIC %>/js/wp-embed.min.js"></script>
    </body>
 </html>
