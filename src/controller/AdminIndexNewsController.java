@@ -12,36 +12,25 @@ import javax.servlet.http.HttpServletResponse;
 import model.bean.News;
 import model.dao.NewsDao;
 
-public class PublicDetailController extends HttpServlet {
+public class AdminIndexNewsController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private NewsDao newsDao;
 
-	public PublicDetailController() {
+	public AdminIndexNewsController() {
 		super();
 		newsDao = new NewsDao();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		int id = 0;
-		try {
-			id = Integer.parseInt(request.getParameter("did"));
-		}catch(NumberFormatException e) {
-			
-		}
-		
-		News item = newsDao.getItem(id);
-		ArrayList<News> listNews = newsDao.getRelatedItems(item, 3);
-		
-		request.setAttribute("item", item);
+		ArrayList<News> listNews = newsDao.getItems();
 		request.setAttribute("listNews", listNews);
-		System.out.println(listNews.size());
-		RequestDispatcher rd = request.getRequestDispatcher("/public/detail.jsp");
+		
+		RequestDispatcher rd = request.getRequestDispatcher("/admin/news/index.jsp");
 		rd.forward(request, response);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 	}
-
 }

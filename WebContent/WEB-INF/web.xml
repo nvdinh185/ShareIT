@@ -28,4 +28,36 @@
     <servlet-name>PublicDetailController</servlet-name>
     <url-pattern>/detail</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>PublicSaveCommentController</servlet-name>
+    <servlet-class>controller.PublicSaveCommentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PublicSaveCommentController</servlet-name>
+    <url-pattern>/save</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdminIndexController</servlet-name>
+    <servlet-class>controller.AdminIndexController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminIndexController</servlet-name>
+    <url-pattern>/admin/index</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdminIndexCatController</servlet-name>
+    <servlet-class>controller.AdminIndexCatController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminIndexCatController</servlet-name>
+    <url-pattern>/admin/cats</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AdminIndexNewsController</servlet-name>
+    <servlet-class>controller.AdminIndexNewsController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminIndexNewsController</servlet-name>
+    <url-pattern>/admin/news</url-pattern>
+  </servlet-mapping>
 </web-app>

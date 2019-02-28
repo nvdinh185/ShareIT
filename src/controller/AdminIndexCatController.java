@@ -9,34 +9,23 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.bean.News;
-import model.dao.NewsDao;
+import model.bean.Category;
+import model.dao.CatDao;
 
-public class PublicDetailController extends HttpServlet {
+public class AdminIndexCatController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private NewsDao newsDao;
 
-	public PublicDetailController() {
+	public AdminIndexCatController() {
 		super();
-		newsDao = new NewsDao();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		int id = 0;
-		try {
-			id = Integer.parseInt(request.getParameter("did"));
-		}catch(NumberFormatException e) {
-			
-		}
 		
-		News item = newsDao.getItem(id);
-		ArrayList<News> listNews = newsDao.getRelatedItems(item, 3);
-		
-		request.setAttribute("item", item);
-		request.setAttribute("listNews", listNews);
-		System.out.println(listNews.size());
-		RequestDispatcher rd = request.getRequestDispatcher("/public/detail.jsp");
+		CatDao catDao = new CatDao();
+		ArrayList<Category> listCat = catDao.getItems();
+		request.setAttribute("listCat", listCat);
+		RequestDispatcher rd = request.getRequestDispatcher("/admin/cat/index.jsp");
 		rd.forward(request, response);
 	}
 

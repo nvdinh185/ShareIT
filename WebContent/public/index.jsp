@@ -55,7 +55,7 @@
                                     <div class="floods-text" style="margin-left: 2%">
                                        <h3>
                                           <a style="font-size: 17px"
-                                             href="#"><%=item.getName() %></a><span
+                                             href="<%=request.getContextPath()%>/detail?did=<%=item.getId()%>"><%=item.getName() %></a><span
                                              style="font-size: 13px"><%=item.getItemCat().getName() %><label>|</label> <i
                                              style="font-size: 13px; color: #FA7535"><%=item.getDate_create() %></i></span>
                                        </h3>
@@ -92,7 +92,7 @@
                      </div>
                      <div class="newspaper-x-title">
                         <h4>
-                           <a href="https://colorlib.com/newspaper-x/2017/05/10/maecenas-tincidunt-posuere-quam-eu-consectetur-justo-5/"><%=itemById.getName() %></a>
+                           <a href="<%=request.getContextPath()%>/detail?did=<%=itemById.getId()%>"><%=itemById.getName() %></a>
                         </h4>
                      </div>
                      <span class="newspaper-x-category">

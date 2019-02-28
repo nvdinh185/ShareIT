@@ -4,16 +4,20 @@
 <%@include file="/templates/public/inc/header.jsp" %>
          <div id="content" class="site-content container">
             <div class="row">
+            <%
+            String catName = ""; 
+            ArrayList<News> listNews = (ArrayList<News>) request.getAttribute("listNews");
+            if(listNews!=null && listNews.size()>0){
+          	  catName = listNews.get(0).getItemCat().getName();
+            %>
                <header class="col-xs-12">
-                  <h3 class="page-title"><span>News</span></h3>
+                  <h3 class="page-title"><span><%=catName %></span></h3>
                </header>
             </div>
             <div class="row">
                <div class="col-xs-12 newspaper-x-archive-first-posts">
                   <div class="row">
                   <%
-	                  ArrayList<News> listNews = (ArrayList<News>) request.getAttribute("listNews");
-	                  if(listNews!=null && listNews.size()>0){
 	                   for(News item: listNews){
                   %>
                      <div class="col-md-6">

@@ -104,7 +104,7 @@ public class NewsDao {
 
 	public ArrayList<News> getRelatedItems(News itemNews, int number) {
 		conn = DBConnectionUtil.getConnection();
-		String sql = "SELECT n.*, c.name AS cname FROM news AS n JOIN categories AS c WHERE n.cat_id = c.id AND n.cat_id = ? AND n.id !=? ORDER BY n.id DESC LIMIT ?";
+		String sql = "SELECT n.*, c.name AS cname FROM news AS n JOIN categories AS c WHERE n.cat_id = c.id AND n.cat_id = ? AND n.id != ? ORDER BY n.id DESC LIMIT ?";
 		ArrayList<News> listItems = new ArrayList<>();
 		try {
 			pst = conn.prepareStatement(sql);
@@ -137,7 +137,7 @@ public class NewsDao {
 			if (rs.next()) {
 				items = new News(rs.getInt("id"), rs.getString("name"), rs.getString("preview_text"),
 						rs.getString("detail_text"), rs.getTimestamp("date_create"), rs.getString("picture"),
-						rs.getInt("counter"), new Category(0, rs.getString("cname")));
+						rs.getInt("counter"), new Category(rs.getInt("cat_id"), rs.getString("cname")));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

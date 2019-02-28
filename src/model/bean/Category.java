@@ -23,6 +23,11 @@ public class Category {
 	public Category() {
 		super();
 	}
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", name=" + name + "]";
+	}
+	
 	
 
 }

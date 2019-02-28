@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
-<%@include file="/public/inc/header.jsp" %>
+<%@include file="/templates/public/inc/header.jsp" %>
          <div id="content" class="site-content container">
             <div class="row">
                <div id="primary" class="content-area newspaper-x-sidebar col-md-8 col-sm-8 col-xs-12">
@@ -24,8 +24,8 @@
                      </article>
                   </main>
                </div>
-               <%@include file="/public/inc/side-bar.jsp" %>
+               <%@include file="/templates/public/inc/side-bar.jsp" %>
             </div>
          </div>
          <div id="content" class="container"></div>
-         <%@include file="/public/inc/footer.jsp" %>
+         <%@include file="/templates/public/inc/footer.jsp" %>

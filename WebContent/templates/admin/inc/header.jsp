@@ -69,13 +69,8 @@
                      </section>
                   </div>
                   <div class="col-lg-4">
-                     <form role="search" method="get" id="searchform" action="https://colorlib.com/newspaper-x/">
-                        <label>
-                        <span class="screen-reader-text">Search for:</span>
-                        <input class="search-field" placeholder="Search..." value="" name="s" type="search">
-                        </label>
-                        <button class="search-submit" value="Search" type="submit"><span class="fa fa-search"></span></button>
-                     </form>
+                     <span class="" style="margin-right:10px;text-transform:uppercase;font-weight: bold;padding-top:2%   ">Chào admindemo</span>
+                     <a href="http://shareit.vinaenter.edu.vn/logout" class="btn btn-danger pull-right">Đăng xuất</a>
                   </div>
                </div>
             </div>
@@ -98,26 +93,13 @@
                      <div class="col-md-12">
                         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span class="fa fa-bars"></span></button>
                         <div class="menu-primary-menu-container">
-                           <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
-                              <li id="menu-item-127" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-127"><a href="https://colorlib.com/newspaper-x" aria-current="page">Home</a></li>
-                              <li id="menu-item-128" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-128" aria-haspopup="true">
-                                 <a href="#">News</a>
-                                 <ul class="sub-menu">
-                                 <%
-                                 	CatDao catDao_header = new CatDao();
-  	                           		ArrayList<Category> listCats_header = catDao_header.getItems();
-  	                           		if(listCats_header!=null && listCats_header.size()>0){
-  	                            	for(Category item: listCats_header){
-                                 %>
-                                    <li id="menu-item-129" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-129" aria-haspopup="true">
-                                       <a href="<%=request.getContextPath() %>/cat?cid=<%=item.getId()%>"><%=item.getName() %></a>
-                                    </li>
-                                    <%}} %>
-                                 </ul>
-                              </li>
-                              <li id="menu-item-135" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-135"><a href="https://colorlib.com/newspaper-x/blog/">Blog</a></li>
-                              <li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-140"><a href="https://colorlib.com/newspaper-x/contact/">Contact</a></li>
-                           </ul>
+                           <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="http://shareit.vinaenter.edu.vn/admincp" class="menu-top-active">Trang chủ</a></li>
+                           <li><a href="http://shareit.vinaenter.edu.vn/admincp/cat" class="menu-top-">Quản lý danh mục</a></li>
+                            <li><a href="http://shareit.vinaenter.edu.vn/admincp/news" class="  menu-top-">Quản lý tin tức &nbsp;<span title="Có bài viết đang chờ kiểm duyệt" class="badge ac123">17 </span> </a></li> 
+                            <li><a href="http://shareit.vinaenter.edu.vn/admincp/user" class="menu-top-">Quản lý người dùng</a></li> 
+                            <li><a href="http://shareit.vinaenter.edu.vn/admincp/comment" class=" menu-top-">Quản lý bình luận</a></li> 
+                        </ul>
                         </div>
                      </div>
                   </div>

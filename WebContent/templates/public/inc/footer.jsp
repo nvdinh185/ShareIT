@@ -1,3 +1,5 @@
+<%@page import="model.dao.NewsDao"%>
+<%@page import="model.bean.News"%>
 <%@page import="model.bean.Category"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="model.dao.CatDao"%>
@@ -21,18 +23,17 @@
                         <div id="recent-posts-3" class="widget widget_recent_entries">
                            <h3 class="widget-title">Recent posts</h3>
                            <ul>
+                           <%
+                           NewsDao newsDao2 = new NewsDao();
+                           ArrayList<News> listNews2 = newsDao2.getItems(4);
+                           if(listNews2!=null && listNews2.size()>0){
+                               for(News item_footer: listNews2){
+                           %>
                               <li>
-                                 <a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/">Sed purus velit, finibus non semper nonut am utas</a>
-                                 <span class="post-date">May 10, 2017</span>
+                                 <a href="https://colorlib.com/newspaper-x/2017/05/10/sed-purus-velit-finibus-non-semper-nonut-utas/"><%=item_footer.getName() %></a>
+                                 <span class="post-date"><%=item_footer.getDate_create() %></span>
                               </li>
-                              <li>
-                                 <a href="https://colorlib.com/newspaper-x/2017/05/10/nunc-hendrerit-egestas-amus-ad-arcu-im-usa/">Nunc hendrerit egestas amus ad arcu im usa</a>
-                                 <span class="post-date">May 10, 2017</span>
-                              </li>
-                              <li>
-                                 <a href="https://colorlib.com/newspaper-x/2017/05/10/itum-binus-sitam-conestum-ey/">Itum as binus sitam conestum ey</a>
-                                 <span class="post-date">May 10, 2017</span>
-                              </li>
+                              <%}} %>
                            </ul>
                         </div>
                      </div>
@@ -46,7 +47,7 @@
   	                           		if(listCats_footer!=null && listCats_footer.size()>0){
   	                            	for(Category item1: listCats_footer){
                                  %>
-                              <li class="cat-item cat-item-2"><a href="https://colorlib.com/newspaper-x/category/editorial/"><%=item1.getName() %></a> <span class="newspaper-x-cat-count">11</span></li>
+                              <li class="cat-item cat-item-2"><a href="<%=request.getContextPath()%>/cat?cid=<%=item1.getId()%>"><%=item1.getName() %></a> <span class="newspaper-x-cat-count">11</span></li>
                            <%}} %>
                            </ul>
                         </div>

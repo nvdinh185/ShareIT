@@ -93,4 +93,13 @@ public class News {
 		super();
 	}
 
+	@Override
+	public String toString() {
+		return "News [id=" + id + ", name=" + name + ", preview_text=" + preview_text + ", detail_text=" + detail_text
+				+ ", date_create=" + date_create + ", picture=" + picture + ", counter=" + counter + ", itemCat="
+				+ itemCat + "]";
+	}
+	
+	
+
 }
